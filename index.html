@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kishan Sanka Umesh — Firmware Engineer</title>
+<meta name="description" content="Kishan Sanka Umesh — firmware engineer specialising in bare-metal C/C++, ARM Cortex-M and RTOS development.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="#top" class="mark" aria-label="Kishan Sanka Umesh — home">KSU</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#writing">Writing</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="nav-burger" aria-label="Toggle menu" aria-expanded="false">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 4h12M2 8h12M2 12h12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="mark mark-lg hero-mark" aria-hidden="true">KSU</div>
+      <h1>Firmware that has to be right<br><em>the first time.</em></h1>
+      <p class="hero-sub">
+        I'm Kishan — a firmware engineer who spends most days close to the metal: ARM Cortex‑M,
+        RTOS internals, and the kind of hardware bugs that only show up on a logic analyzer.
+        MSc in Embedded Systems from Newcastle University, currently building an AI‑integrated
+        robotics OS in Bengaluru.
+      </p>
+      <div class="hero-meta">
+        <span class="chip">Bare‑metal C / C++</span>
+        <span class="chip">ARM Cortex‑M</span>
+        <span class="chip">FreeRTOS · ThreadX</span>
+        <span class="chip">MISRA C</span>
+        <span class="chip">Root‑cause hardware debug</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="hero-wave wrap" aria-hidden="true">
+      <svg viewBox="0 0 1000 90" preserveAspectRatio="none">
+        <g class="wave-grid">
+          <line x1="0" y1="15" x2="1000" y2="15"></line>
+          <line x1="0" y1="45" x2="1000" y2="45"></line>
+          <line x1="0" y1="75" x2="1000" y2="75"></line>
+        </g>
+        <path class="wave-path" d="M0,45 C40,45 40,10 80,10 C120,10 120,80 160,80 C200,80 200,45 240,45 L280,45 L280,15 L320,15 L320,75 L360,75 L360,45 C400,45 400,20 440,20 C480,20 480,70 520,70 C560,70 560,45 600,45 L640,45 L640,10 L660,10 L660,80 L680,80 L680,45 C720,45 720,30 760,30 C800,30 800,60 840,60 C880,60 880,45 920,45 L1000,45"/>
+        <circle class="wave-dot" cx="1000" cy="45" r="4"></circle>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="about-copy reveal">
+        <div class="eyebrow">About</div>
+        <p>
+          <strong>I like problems that end at a register, not a guess.</strong> Most of my work sits
+          on resource‑constrained microcontrollers, where every byte and every millisecond is
+          accounted for — improving a device's Wi‑Fi throughput by 1200% came down to rewriting
+          the driver layer, not adding hardware.
+        </p>
+        <p>
+          I've spent time on both sides of the board: writing the firmware, and then finding out
+          why it crashed at 3am. Segger J‑Link, logic analyzers, and oscilloscopes are part of the
+          regular toolkit — along with the discipline that automotive‑grade coding standards like
+          MISRA C ask for.
+        </p>
+        <p>
+          Outside of work, I'm usually on a trail or a bike, occasionally on a badminton court, and
+          every so often at a piano concert.
+        </p>
+      </div>
+      <ul class="fact-list reveal">
+        <li><span class="fact-k">Based in</span><span class="fact-v">Bengaluru, India</span></li>
+        <li><span class="fact-k">Currently</span><span class="fact-v">Director of Operations, Autman Robotics</span></li>
+        <li><span class="fact-k">Focus</span><span class="fact-v">Embedded firmware · RTOS · Hardware debug</span></li>
+        <li><span class="fact-k">Education</span><span class="fact-v">MSc Embedded Systems &amp; IoT, Newcastle (Distinction)</span></li>
+        <li><span class="fact-k">Reachable at</span><span class="fact-v">kishansu20@gmail.com</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Experience</div>
+        <h2>Where I've worked</h2>
+        <p>In order, most recent first — from early sensor validation to leading firmware on a shipping product.</p>
+      </div>
+
+      <div class="timeline reveal">
+
+        <div class="tl-item">
+          <span class="tl-date">Oct 2025 — Present</span>
+          <h3 class="tl-role">Director of Operations</h3>
+          <div class="tl-org">Autman Robotics Ltd · Bengaluru, India</div>
+          <ul class="tl-list">
+            <li>Lead feasibility and prototype testing for tactile sensors, using logic analyzers and oscilloscopes to validate sensor‑to‑MCU communication.</li>
+            <li>Built firmware testing pipelines that hold early‑stage code to strict timing, memory, and stability limits.</li>
+            <li>Manage cross‑functional teams building a proprietary AI‑integrated robotics operating system, working directly with the CTO on technical requirements and milestones.</li>
+          </ul>
+          <div class="tl-tags"><span>EIT sensors</span><span>Team leadership</span><span>Firmware QA</span></div>
+        </div>
+
+        <div class="tl-item">
+          <span class="tl-date">Sep 2025 — Feb 2026</span>
+          <h3 class="tl-role">Robotics Consultant</h3>
+          <div class="tl-org">British Institute of Technology Robotics · London, UK</div>
+          <ul class="tl-list">
+            <li>Researched the Fujitsu HOAP‑3 architecture to support design of a full humanoid robotic system.</li>
+            <li>Worked with technical teams to map robotic kinematics and control systems.</li>
+          </ul>
+          <div class="tl-tags"><span>Humanoid robotics</span><span>Kinematics</span></div>
+        </div>
+
+        <div class="tl-item">
+          <span class="tl-date">Jun 2024 — Sep 2025</span>
+          <h3 class="tl-role">Graduate Firmware Engineer &amp; Product Development</h3>
+          <div class="tl-org">Palintest Pvt Ltd · Newcastle, UK</div>
+          <ul class="tl-list">
+            <li>Led end‑to‑end Wi‑Fi integration into a water analysis instrument on a 7‑month schedule.</li>
+            <li>Raised Wi‑Fi throughput over 1200% (30 KBPS → 400+ KBPS) through low‑level firmware and driver optimisation.</li>
+            <li>Root‑caused critical shutdown issues with Segger J‑Link and logic analyzers — watchdog resets, stack overflows, memory leaks.</li>
+            <li>Added cryptographic locking on debug lines to reduce firmware‑security risk.</li>
+          </ul>
+          <div class="tl-tags"><span>FreeRTOS</span><span>ThreadX</span><span>ARM Cortex‑M</span><span>Docker · Git</span></div>
+        </div>
+
+        <div class="tl-item">
+          <span class="tl-date">Aug 2022 — Oct 2022</span>
+          <h3 class="tl-role">Embedded Engineer Intern</h3>
+          <div class="tl-org">Tiff Labs Pvt Ltd · Bangalore, India</div>
+          <ul class="tl-list">
+            <li>Designed and ran test strategies validating over 20 different sensors for reliability and data accuracy.</li>
+          </ul>
+          <div class="tl-tags"><span>Sensor validation</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section id="education">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Education</div>
+        <h2>Where it started</h2>
+      </div>
+
+      <div class="timeline reveal">
+        <div class="tl-item">
+          <span class="tl-date">Sep 2023 — Sep 2024</span>
+          <h3 class="tl-role">MSc Embedded Systems &amp; IoT</h3>
+          <div class="tl-org">Newcastle University, UK · Distinction</div>
+          <ul class="tl-list">
+            <li>Real‑Time Embedded Systems, M2M &amp; IoT, Wireless Sensor Networks, Machine Learning, Reconfigurable Hardware Design (FPGA), Network Security.</li>
+          </ul>
+        </div>
+        <div class="tl-item">
+          <span class="tl-date">Aug 2018 — Aug 2022</span>
+          <h3 class="tl-role">BE Electronics &amp; Communication</h3>
+          <div class="tl-org">Dayananda Sagar College of Engineering, India · 9.08 / 10</div>
+          <ul class="tl-list">
+            <li>Digital Electronics, Circuit Analysis, Microcontrollers, Control Systems, Machine Learning, Embedded Systems, Python &amp; C programming.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Projects</div>
+        <h2>Selected builds</h2>
+        <p>Grouped by where I built them. Each card opens into the full write‑up.</p>
+      </div>
+
+      <div class="tabs reveal" role="tablist" aria-label="Filter projects by education level">
+        <button class="tab is-active" data-filter="all">All</button>
+        <button class="tab" data-filter="msc">MSc · Newcastle</button>
+        <button class="tab" data-filter="be">BE · DSCE</button>
+      </div>
+
+      <div class="card-grid reveal">
+
+        <a class="card" data-group="msc" href="projects/custom-rtos.html">
+          <div class="card-top"><span class="card-index">MSc · 2024</span></div>
+          <h3>Real‑Time Operating System, from scratch</h3>
+          <p>A custom RTOS written in ARM assembly — task scheduling, context switching and mutex protocols built to hold real‑time deadlines.</p>
+          <div class="card-tags"><span>Assembly</span><span>ARM</span><span>RTOS</span></div>
+          <span class="card-link">View project <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+
+        <a class="card" data-group="msc" href="projects/fpga-audio-processor.html">
+          <div class="card-top"><span class="card-index">MSc · 2024</span></div>
+          <h3>FPGA Audio Processor</h3>
+          <p>A synchronous VHDL architecture on a 50 MHz master clock, driving a hardware CODEC over I2C with a serial‑to‑parallel FIR filter chain.</p>
+          <div class="card-tags"><span>VHDL</span><span>FPGA</span><span>I2C</span></div>
+          <span class="card-link">View project <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+
+        <a class="card" data-group="msc" href="projects/smart-mobility-cane.html">
+          <div class="card-top"><span class="card-index">MSc · 2023</span></div>
+          <h3>Smart Mobility Cane</h3>
+          <p>An IoT‑enabled cane with GPS and vibratory feedback for localised guidance, with sensor filtering modelled in MATLAB before deployment to C.</p>
+          <div class="card-tags"><span>IoT</span><span>GPS</span><span>MATLAB</span></div>
+          <span class="card-link">View project <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+
+        <a class="card" data-group="be" href="projects/sensor-fusion-logger.html">
+          <div class="card-top"><span class="card-index">BE · Placeholder</span><span class="badge-placeholder">Edit me</span></div>
+          <h3>Sensor Fusion Data Logger</h3>
+          <p>Placeholder project — swap in your actual BE‑level project details here. Multi‑sensor logging with on‑device filtering.</p>
+          <div class="card-tags"><span>C</span><span>Microcontroller</span></div>
+          <span class="card-link">View project <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+
+        <a class="card" data-group="be" href="projects/digital-control-simulator.html">
+          <div class="card-top"><span class="card-index">BE · Placeholder</span><span class="badge-placeholder">Edit me</span></div>
+          <h3>Digital Control System Simulator</h3>
+          <p>Placeholder project — swap in your actual BE‑level project details here. Closed‑loop control modelled and simulated.</p>
+          <div class="card-tags"><span>MATLAB</span><span>Control theory</span></div>
+          <span class="card-link">View project <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H5M11 3V9" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WRITING / BLOG ============ -->
+  <section id="writing">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Writing</div>
+        <h2>Notes &amp; research</h2>
+      </div>
+      <div class="blog-panel reveal">
+        <h3>First post is in progress.</h3>
+        <p>This is where I'll write about RTOS internals, hardware debugging war stories, and anything else worth documenting. Check back soon.</p>
+        <ul class="ghost-list" aria-hidden="true">
+          <li><span class="ghost-bar ghost-date"></span><span class="ghost-bar ghost-title" style="width: 78%;"></span></li>
+          <li><span class="ghost-bar ghost-date"></span><span class="ghost-bar ghost-title" style="width: 58%;"></span></li>
+          <li><span class="ghost-bar ghost-date"></span><span class="ghost-bar ghost-title" style="width: 68%;"></span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ CONTACT / FOOTER ============ -->
+<footer class="footer" id="contact">
+  <div class="wrap">
+    <div class="footer-top reveal">
+      <h2>Let's talk firmware, robotics, or trail routes.</h2>
+      <div class="footer-links">
+        <a href="mailto:kishansu20@gmail.com">kishansu20@gmail.com</a>
+        <a href="https://linkedin.com/in/REPLACE-WITH-YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Kishan Sanka Umesh</span>
+      <span>Bengaluru, India</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
